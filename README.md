@@ -2,7 +2,7 @@
 <h4>You need to run either index.php or json.php to get the data from the cloud.</h4>
 <p>if the index or json.php is open in browser it will automatically download the new json data from the database!</p>
 <p>for advanced users the script ai.js is getting the data from the cloud, use it for your own script.</p>
-<p><i><b>I am not responsible for the script useage.</b></i></p>
+<p><i><b>I am not responsible for the script usage.</b></i></p>
 <br>
 <br>
 <p>sample output:</p><br>
