@@ -9,11 +9,11 @@
  </script>
 </head>
 <body>
-  <script src="ai.js" type="text/javascript">
+  <script src="js/ai.js" type="text/javascript">
  </script>
 </body>
 </html>
 <?php
-$string = file_get_contents("general.json");
+$string = file_get_contents("json/general.json");
 print_r($string);
  ?>

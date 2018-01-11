@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents("general.json");
+$json = file_get_contents("json/general.json");
 $exa_data = json_decode($json, true);
 
 $page = $_SERVER['PHP_SELF'];
@@ -18,7 +18,7 @@ header("Refresh: $sec; url=$page");
 	body, html {
 	   height: 100%;
 	   background-repeat:round;
-	   background-image: url('topbg.jpg');
+	   background-image: url('img/topbg.jpg');
      color: #fff;
 	}
 
@@ -68,7 +68,7 @@ header("Refresh: $sec; url=$page");
 	<div class="container">
 		<div class="card card-container">
 			<!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-			<img class="profile-img-card" id="profile-img" src="logo.png">
+			<img class="profile-img-card" id="profile-img" src="img/logo.png">
 			<p class="profile-name-card" id="profile-name"></p>
 			<h3><b>Exacoin Price:</b><i style="color:#00ffff;"> <br><?php echo $exa_data['price_exa'] ?></i></h3>
       <h3><b>Exacoin Price(btc):</b><i style="color:#0087ff;"> <?php echo $exa_data['btc_exa'] ?> BTC/EXA</i></h3>
@@ -80,7 +80,7 @@ header("Refresh: $sec; url=$page");
       <h3><b>Exacoin Volume:</b><i style="color:#f1cf21;"> <?php echo $exa_data['24_vol'] ?></i></h3>
 		</div><!-- /card-container -->
 	</div><!-- /container -->
-  <script src="ai.js" type="text/javascript">
+  <script src="js/ai.js" type="text/javascript">
 	</script>
 </body>
 </html>
